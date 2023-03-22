@@ -1,0 +1,17 @@
+{
+    "name": "lerna-repo",
+    "private": true,
+    "scripts": {
+        "start": "./scripts/common.sh start",
+        "build": "./scripts/common.sh build",
+        "lint": "./scripts/common.sh lint",
+        "commit": "yarn workspace commit"
+    },
+    "workspaces": [
+        "packages/*",
+        "shared/*"
+    ],
+    "devDependencies": {
+        "lerna": "^4.0.0"
+    }
+}
